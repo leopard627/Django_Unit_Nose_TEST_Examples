@@ -4,7 +4,7 @@
 
 
 <p align="left">
-  <img src="./snap_shot.png" width="700"/>
+  <img src="./img/snap_shot.png" width="700"/>
 </p>
 
 
@@ -16,4 +16,12 @@
 ## Let's Say 아몰랑~ 
 <p align="left">
   <img src="http://i.imgur.com/2kt9tD1.png" width="700"/>
+</p>
+
+<p align="left">
+  <img src="./img/rebase.gif" width="700"/>
+</p>
+
+<p align="left">
+  <img src="./img/jim.gif" width="700"/>
 </p>
