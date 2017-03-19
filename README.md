@@ -22,6 +22,4 @@
   <img src="./img/rebase.gif" width="700"/>
 </p>
 
-<p align="left">
-  <img src="./img/jim.gif" width="700"/>
-</p>
+
