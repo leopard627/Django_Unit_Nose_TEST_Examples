@@ -9,7 +9,7 @@
 
 #
 <p align="left">
-  <img src="./img/setting.png" width="700"/>
+  <img src="./img/setting.png" width="600"/>
 </p>
 
 
