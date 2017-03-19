@@ -20,7 +20,7 @@
 
 ## Let's Say 아몰랑~ 
 <p align="left">
-  <img src="http://i.imgur.com/2kt9tD1.png" width="550"/>
+  <img src="http://i.imgur.com/2kt9tD1.png" width="400"/>
 </p>
 
 <p align="left">
