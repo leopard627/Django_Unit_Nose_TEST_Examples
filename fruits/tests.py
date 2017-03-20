@@ -32,12 +32,23 @@ class TestFruitView(object):
     def test_product_index(self):
         response = self.client.get("/fruits/")
         nt.assert_equal(response.content, b"The index")
+        nt.assert_equal(response.status_code, 200)
+        nt.assert_equal(response.status_code, 404)
 
     def test_product_show(self):
         response = self.client.get("/fruits/papaya")
         nt.assert_equal(response.content, b"Show the papaya page")
+        nt.assert_equal(response.status_code, 200)
+        nt.assert_equal(response.status_code, 404)
 
     def test_product_add(self):
         response = self.client.get("/fruits/add")
         nt.assert_equal(response.content, b"Add a fruit")
+        nt.assert_equal(response.status_code, 200)
 
+    def create_fruite(fruits_text, color_text, self):
+        return Fruit.objects.create(name=fruits_text, color=color_text)
+
+    def test_frute_create(self):
+        nt.assert_equal(1, 1)
+        nt.assert_equal(1, 2)
