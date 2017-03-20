@@ -1,4 +1,5 @@
 from django.test import Client
+from django.test import TestCase
 from .models import Fruit
 import nose.tools as nt
 
@@ -24,7 +25,7 @@ class TestFruit(object):
         self.fruit.disappear()
 
 
-class TestFruitView(object):
+class TestFruitView(TestCase):
 
     def setup(self):
         self.client = Client()
@@ -33,13 +34,11 @@ class TestFruitView(object):
         response = self.client.get("/fruits/")
         nt.assert_equal(response.content, b"The index")
         nt.assert_equal(response.status_code, 200)
-        nt.assert_equal(response.status_code, 404)
 
     def test_product_show(self):
         response = self.client.get("/fruits/papaya")
         nt.assert_equal(response.content, b"Show the papaya page")
         nt.assert_equal(response.status_code, 200)
-        nt.assert_equal(response.status_code, 404)
 
     def test_product_add(self):
         response = self.client.get("/fruits/add")
@@ -51,4 +50,4 @@ class TestFruitView(object):
 
     def test_frute_create(self):
         nt.assert_equal(1, 1)
-        nt.assert_equal(1, 2)
+        nt.assert_equal(False, self.create_fruite("a", "B"))
